@@ -2668,3 +2668,11 @@ table thead tr th {
 	float: right;
 	width: 60%;
 }
+
+@media(max-width:648px)
+{
+	.j_extra_pt
+	{
+		padding-top: 7px;
+	}
+}
