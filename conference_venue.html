@@ -22,66 +22,67 @@
 
     <script type="text/javascript">
       window.onload=function(){
-        changeMobileMenu('home');
+        changeMobileMenu('conferenceVenue');
       }
     </script>
 
     <title data-react-helmet="true">AJCAI 2023 - Brisbane, Australia</title>
-  </head>
+  </head> 
   <body>
     <div id="___gatsby">
       <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
         <div class="w-full min-h-screen flex flex-col" data-is-root-path="true">
+          <header>
 
 <!-- Nav Bar -->
-        <iframe id = 'menu' src = './top_menu.html' frameborder = '0' width = '100%' height = '64px' scrolling = 'auto' style = 'z-index: 999; position: fixed;' onmouseover = "extentIframe()" onmouseleave="resetIframe()"></iframe>
+          <iframe id = 'menu' src = './top_menu.html' frameborder = '0' width = '100%' height = '64px' scrolling = 'auto' style = 'z-index: 999; position: fixed;' onmouseover="extentIframe()" onmouseleave="resetIframe()"></iframe>
 <!-- End Of Nav Bar -->
 
+          </header>
           <div class="w-full h-16">
           </div>
           <main class="w-full">
-            <div>
-              <div class="hidden md:block" style="position:relative;min-height:min(calc(100vw * 9 / 16), 100vh);max-height:100vh;overflow:hidden">
-                <div data-gatsby-image-wrapper="" style="position:absolute;z-index:-2;top:50%;left:50%;transform:translate(-50%, -50%);min-width:100%;min-height:100%;width:auto;height:auto" class="gatsby-image-wrapper">
-                  <div aria-hidden="true" style="padding-top:56.25%">
-                  </div>
-                  <img aria-hidden="true" data-placeholder-image="" style="opacity:1; transition:opacity 500ms linear" src="./imgs/brisbane_1920.jpg" alt="Southbank skyline"/>
-                </div>
-                <div class="pl-11 pr-4 py-8 rounded-b-xl shadow-lg w-87" style="position:absolute;top:0%;right:20%;background-color:rgba(236, 231, 241, 0.85)">
-                  <h1 class="mb-2 relative font_titleFont text-black font-extrabold tracking-wide text-titleBig leading-titleBig"><span class="text-mainPurple">AJCAI</span><br/><span style = 'font-size: 37px;'>Australasian Joint Conference on Artificial Intelligence</span><br/>2023</h1>
-                  <p class="mb-4 font-semibold text-titleSmall">Brisbane, Australia</p>
-                  <p class="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide" style = 'font-size: 20px;'>28<sup>th</sup> Nov - 1<sup>st</sup> Dec, 2023</p>
-                  <!-- <a title="Learn More.." class="font-semibold text-titleSmall hover:underline text-mainPurple" href="#welcome">Learn More.</a> -->
-                </div>
-              </div>
-              <div class = 'md:hidden'>
-                <div class = 'global-wrapper pt-9 bg-purple-50'>
-                  <div class = 'flex flex-col items-center'>
-                    <h1
-                    class="mb-2 w-87 relative font-titleFont text-black font-extrabold tracking-wide text-titleBig leading-titleBig text-center">
-                    <span class="text-mainPurple">AJCAI</span> <br />Australasian Joint Conference on Artificial Intelligence<br />2023</h1>
-                    <p class="mb-4 font-semibold text-titleSmall">Brisbane, Australia</p>
-                    <p class="mb-1 font-bold text-mainPurple text-titleMedium tracking-semiWide" style = 'font-size: 20px;'>28<sup>th</sup> Nov - 1<sup>st</sup> Dec, 2023</p>
-                    <div class="flex space-x-2 mb-7 h-7"></div>
-                  </div>
-                </div>
-                <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained h-50 m-0 w-full top-0 left-0">
-                  <div style="max-width:1920px;display:block">
-                    <img alt="" role="presentation" aria-hidden="true" src="./imgs/brisbane_1920.jpg" style="max-width:100%;display:block;position:static" />
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="global-wrapper pb-12" style="max-width:70rem" id="welcome">
               <header class="px-0 sm:px-7">
-                <h2 id = 'welcome' class="pt-9 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">Welcome to Australasian Joint Conference on Artificial Intelligence!</h2>
+
+                <h2 class="pt-9 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">Conference Venue</h2>
+                <h2 class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Reception: Terrace Room</h2>
+                <img src = './imgs/reception_room.jpg' class = 'j_venue_pic_screen j_attraction_mobile'>
+                <p class = 'mb-4 mt-6' >
+                  The Terrace Room is located on the top floor of the Sir Llew Edwards Building (Building 14). It's a large multipurpose function room suitable for seated meals, 
+                  lectures, workshops and cocktail parties with an adjoining open-air terrace overlooking the St Lucia campus forecourt.
+                </p>
+
+                <h2 class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Main Conference Room: 14-212 (202 Seats)</h2>
+                <img src = './imgs/main_conference_room.jpg' class = 'j_venue_pic_screen j_attraction_mobile'>
+                <p class = 'mb-4 mt-6' >
+                  14-212 Learning Theatre is located on the second floor of the Sir Llew Edwards Building (Building 14). 
+                  It's the largest learning theatre function room in the building (202 seats) suitable for conference, lectures, workshops.
+                </p>
+
+                <h2 class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Tutorial/Special session/workshop Room: 14-132 (94 Seats) and 14-116 (82 Seats)</h2>
+                <img src = './imgs/workshop_room.jpg' class = 'j_venue_pic_screen j_attraction_mobile'>
+                <p class = 'mb-4 mt-6' >
+                  14-132 (94 seats) and 14-116 (82 seats) Learning theatres are located on the first floor of the Sir Llew Edwards Building (Building 14) suitable for 
+                  conference, lectures, workshops and Seminar.
+                </p>
+
+                <h2 class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Banquet: Custom house (up to 120 guests)</h2>
+                <img src = './imgs/banquet.jpg' class = 'j_venue_pic_screen j_attraction_mobile'>
+                <p class = 'mb-4 mt-6' >
+                  Customs House is a heritage-listed customs house at 427 Queen Street, Brisbane CBD, Brisbane, Queensland, Australia. 
+                  Brisbane's premier event venue offers a range of private function rooms and is available to hire for a range of corporate functions, conferences, 
+                  seminars & events. Start planning your next event at one of the best function venues in Brisbane. The RIVER ROOM can hold banquet of up to 120 guests. 
+                </p>
+                <img src = './imgs/banquet_1.jpg' class = 'j_venue_pic_screen_l j_attraction_mobile'>
+                <img src = './imgs/banquet_2.jpg' class = 'j_venue_pic_screen_r j_attraction_mobile'>
+
               </header>
             </div>
           </main>
           <footer class="bg-gray-100 mt-auto bottom-0 border-t shadow-inner overflow-x-hidden">
             <div class="global-wrapper flex sm:block flex-col items-center md:items-start">
               <div class="flex flex-col py-2 px-6 lg:px-0">
-                <!-- Sponsors, Simply uncomment the following block -->
                 <!-- <div class="flex flex-wrap items-center gap-x-12 gap-y-4 mb-4 md:mb-8">
                   <div>
                     <p class="mb-5 font-semibold font-headingStyle tracking-semiWide">Silver Sponsors</p>
@@ -122,9 +123,12 @@
                 <small class="">AJCAI 2023 - Australasian Joint Conference on Artificial Intelligence 2023, Brisbane, Australia</small>
                 <!-- <small class="mb-3 md:mb-0"><a class="hover:underline" href="https://www.springernature.com/gp/authors/book-authors-code-of-conduct#:~:text=Springer%20Nature%20Code%20of%20Conduct,of%20Conduct%20for%20Book%20Authors.&text=Results%20should%20be%20presented%20clearly,including%20image%2Dbased%20manipulation" target="_blank" rel="noreferrer">Code of Conduct</a></small> -->
               </div>
-              <div>
+              <!-- <div>
                 <small>Image credit: <a href="https://commons.wikimedia.org/wiki/File:Brisbane_Sign_and_Skyline_of_Brisbane_CBD,_Queensland_in_Feb_2020.jpg">Kgbo</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</small>
-              </div>
+              </div> -->
+              <!-- <div>
+                <small>Designed by: <a href="https://github.com/JesseYang0528" style = "text-decoration: underline;">Hao Yang (Jesse Yang)</a></small>
+              </div> -->
               <div>
                 <small>Website built by: <a href="https://github.com/JesseYang0528" style = "text-decoration: underline;">Hao Yang (Jesse Yang)</a>, <a href="https://github.com/bybeye" style = "text-decoration: underline;">Yingbin Bai (Edward Bai)</a></small>
               </div>
@@ -136,6 +140,15 @@
       </div>
     </div>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XSX58G49PD">
+    </script>
+    <script>      
+          if(true) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer && window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-XSX58G49PD', {"send_page_view":false});
+          }
     </script>
     <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script>
     <script id="gatsby-chunk-mapping">
