@@ -279,13 +279,43 @@ ul {
 	padding-right: 30px;
 }
 
+.j_price_table_title_row {
+	background-color: #072a40;
+	color: white;
+	border-top: 1px solid #072a40;
+	border-left: 1px solid #072a40;
+	border-right: 1px solid #072a40;
+}
+
+.j_price_table_content_row_1 {
+	background-color: #eee;
+	color: black;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.j_price_table_content_row_2 {
+	background-color: white;
+	color: black;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
 .j_price_table_column_1 {
 	padding-right: 5px;
-	width: 25%;
+	width: 48%;
 }
 
 .j_price_table_columns {
-	width: 25%;
+	width: 13%;
+}
+
+.j_price_table_row_height {
+	/* padding-top: 30px;
+	padding-bottom: 30px; */
+	height: 80px;
 }
 
 .j_program_table_line {
