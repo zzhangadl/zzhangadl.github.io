@@ -474,6 +474,10 @@ ul {
 	color: white;
 }
 
+.j_ul_content_padding {
+	padding-left: 1.4rem;
+}
+
 ol,
 ul {
 	list-style: none
