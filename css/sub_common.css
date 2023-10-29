@@ -2732,6 +2732,13 @@ table thead tr th {
 	font-weight: 500;
 }
 
+.schedule_table_column_center {
+	width: 20%;
+	text-align: center;
+	font-weight: 500;
+}
+
+
 .schedule_pic {
     box-shadow: 5px 5px 10px grey;
     width: 100%;
