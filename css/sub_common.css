@@ -2725,3 +2725,14 @@ table thead tr th {
 	width: 1em;
 	margin-left: -1em;
 }
+
+.schedule_table_column {
+	width: 20%;
+	text-align: center;
+	font-weight: 500;
+}
+
+.schedule_pic {
+    box-shadow: 5px 5px 10px grey;
+    width: 100%;
+}
