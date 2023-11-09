@@ -333,7 +333,7 @@ function changeMobileMenu(id)
 function extentIframe()
 {
     const extentHeightPc = 315;
-    const extentHeightMobile = 500;
+    const extentHeightMobile = "100%";
     const iframe = document.getElementById('menu');
     let height = iframe.scrollHeight;
     // let width = window.screen.width;

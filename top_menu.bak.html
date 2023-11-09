@@ -154,8 +154,8 @@
                 </div>
               </div>
 
-              <div class="hidden" id="mobile_menu" style="height: 100%">
-                <div id = 'mobile_menu_section_1' class="px-2 pt-2 pb-3 space-y-1" style = 'visibility: visible; height: 100%; overflow: scroll'>
+              <div class="hidden" id="mobile_menu" style="overflow: scroll;">
+                <div id = 'mobile_menu_section_1' class="px-2 pt-2 pb-3 space-y-1" style = 'visibility: visible;'>
                   <a aria-current="page" class="flex item-center w-full" title="Home" href="#" onclick="javascript:top.location.href='/'">
                     <span id = 'home' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Home</span>
                   </a>
@@ -195,6 +195,14 @@
                   <a class="flex item-center w-full" title="Call For Workshops" href="#" onclick="javascript:top.location.href='/call_for_workshops.html'">
                     <span id = 'callForWorkshops' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Call For Workshops</span>
                   </a>
+                  <a class="flex item-center w-full" title="more" onclick = 'mobile_menu_shift(1)'>
+                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">More...</span>
+                  </a>
+                </div>
+                <div id = 'mobile_menu_section_2' class="px-2 pt-2 pb-3 space-y-1" style = 'display: none;'>
+                  <a aria-current="page" class="flex item-center w-full" title="Home" href="#" onclick="javascript:top.location.href='/index.html'">
+                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Home</span>
+                  </a>
                   <a class="flex item-center w-full" title="Call For Applications" href="#" onclick="javascript:top.location.href='/call_for_applications.html'">
                     <span id = 'callForApplications' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">CFP PhD Forum</span>
                   </a>
@@ -218,6 +226,9 @@
                   </a>
                   <a class="flex item-center w-full" title="Sponsors" href="#" onclick="javascript:top.location.href='/sponsor.html'">
                     <span id = 'sponsor' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Sponsors</span>
+                  </a>
+                  <a class="flex item-center w-full" title="Back" onclick = 'mobile_menu_shift(0)'>
+                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Back...</span>
                   </a>
                 </div>
               </div>
