@@ -376,11 +376,11 @@ function extentIframe()
             {
                 iframe.style.height = "100%";
                 const sectionMain = iframe.contentWindow.document.getElementById('mobile_menu_section_main');
-                menuBody.style.maxHeight = window.innerHeight - 64 + 'px';
+                sectionMain.style.maxHeight = window.innerHeight - 64 + 'px';
                 const sectionAttending = iframe.contentWindow.document.getElementById('mobile_menu_section_attending');
-                menuBody.style.maxHeight = window.innerHeight - 64 + 'px';
+                sectionAttending.style.maxHeight = window.innerHeight - 64 + 'px';
                 const sectionCFS = iframe.contentWindow.document.getElementById('mobile_menu_section_cfs');
-                menuBody.style.maxHeight = window.innerHeight - 64 + 'px';
+                sectionCFS.style.maxHeight = window.innerHeight - 64 + 'px';
             }
         }, 250);
     }
