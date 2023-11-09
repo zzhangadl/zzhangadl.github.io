@@ -155,21 +155,32 @@
               </div>
 
               <div class="hidden" id="mobile_menu" style="height: 100%">
-                <div id = 'mobile_menu_section_1' class="px-2 pt-2 pb-3 space-y-1" style = 'visibility: visible; overflow: scroll'>
+                <div id = 'mobile_menu_section_main' class="px-2 pt-2 pb-3 space-y-1 j_mobile_menu_sections" style = 'visibility: visible;'>
                   <a aria-current="page" class="flex item-center w-full" title="Home" href="#" onclick="javascript:top.location.href='/'">
                     <span id = 'home' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Home</span>
                   </a>
-                  <!-- <a class="flex item-center w-full" title="General Chiars" href="#" onclick="javascript:top.location.href='/general_chairs.html'">
-                    <span id = 'generalChairs' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">General Chairs</span>
-                  </a>
-                  <a class="flex item-center w-full" title="General Chiars" href="#" onclick="javascript:top.location.href='/program_chairs.html'">
-                    <span id = 'programChairs' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Program Chairs</span>
-                  </a> -->
                   <a id = 'committee' class="flex item-center w-full" title="Committee" href="#" onclick="javascript:top.location.href='/committee.html'">
                     <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Committee</span>
                   </a>
                   <a class="flex item-center w-full" title="Important Dates" href="#" onclick="javascript:top.location.href='/important_dates.html'">
                     <span id = 'importantDates' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Important Dates</span>
+                  </a>
+                  <a class="flex item-center w-full" title="Back" onclick = 'mobile_menu_shift(1)'>
+                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Attending ></span>
+                  </a>
+                  <a class="flex item-center w-full" title="Back" onclick = 'mobile_menu_shift(2)'>
+                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">> Call For Submissions ></span>
+                  </a>
+                  <a class="flex item-center w-full" title="DAIRNet Symposium" href="#" onclick="javascript:top.location.href='/dairnet.html'">
+                    <span id = 'dairnet' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">DAIRNet Symposium</span>
+                  </a>
+                  <a class="flex item-center w-full" title="Sponsors" href="#" onclick="javascript:top.location.href='/sponsor.html'">
+                    <span id = 'sponsor' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Sponsors</span>
+                  </a>
+                </div>
+                <div id = 'mobile_menu_section_attending' class="px-2 pt-2 pb-3 space-y-1 j_mobile_menu_sections" style = 'display: none;'>
+                  <a class="flex item-center w-full" title="Back" onclick = 'mobile_menu_shift(0)'>
+                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Back...</span>
                   </a>
                   <a class="flex item-center w-full" title="Registration" href="#" onclick="javascript:top.location.href='/registration.html'">
                     <span id = 'registration' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Registration</span>
@@ -186,6 +197,23 @@
                   <a class="flex item-center w-full" title="Workshops" href="#" onclick="javascript:top.location.href='/workshop.html'">
                     <span id = 'workshop' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Workshops</span>
                   </a>
+                  <a class="flex item-center w-full" title="Location" href="#" onclick="javascript:top.location.href='/location.html'">
+                    <span id = 'location' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Location</span>
+                  </a>
+                  <a class="flex item-center w-full" title="Accommodation" href="#" onclick="javascript:top.location.href='/accommodation.html'">
+                    <span id = 'accommodation' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Accommodation</span>
+                  </a>
+                  <a class="flex item-center w-full" title="Local Transportation" href="#" onclick="javascript:top.location.href='/local_transportation.html'">
+                    <span id = 'localTransportation' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Local Transportation</span>
+                  </a>
+                  <a class="flex item-center w-full" title="Conference Venue" href="#" onclick="javascript:top.location.href='/conference_venue.html'">
+                    <span id = 'conferenceVenue' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Conference Venue</span>
+                  </a>
+                </div>
+                <div id = 'mobile_menu_section_cfs' class="px-2 pt-2 pb-3 space-y-1 j_mobile_menu_sections" style = 'display: none;'>
+                  <a class="flex item-center w-full" title="Back" onclick = 'mobile_menu_shift(0)'>
+                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Back...</span>
+                  </a>
                   <a class="flex item-center w-full" title="Call For Papers" href="#" onclick="javascript:top.location.href='/call_for_papers.html'">
                     <span id = 'callForPapers' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Call For Papers</span>
                   </a>
@@ -200,24 +228,6 @@
                   </a>
                   <a class="flex item-center w-full" title="Camera Ready Instruction" href="#" onclick="javascript:top.location.href='/camera_ready.html'">
                     <span id = 'cameraReady' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Camera Ready Instuction</span>
-                  </a>
-                  <a class="flex item-center w-full" title="Location" href="#" onclick="javascript:top.location.href='/location.html'">
-                    <span id = 'location' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Location</span>
-                  </a>
-                  <a class="flex item-center w-full" title="Accommodation" href="#" onclick="javascript:top.location.href='/accommodation.html'">
-                    <span id = 'accommodation' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Accommodation</span>
-                  </a>
-                  <a class="flex item-center w-full" title="Local Transportation" href="#" onclick="javascript:top.location.href='/local_transportation.html'">
-                    <span id = 'localTransportation' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Local Transportation</span>
-                  </a>
-                  <a class="flex item-center w-full" title="Conference Venue" href="#" onclick="javascript:top.location.href='/conference_venue.html'">
-                    <span id = 'conferenceVenue' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Conference Venue</span>
-                  </a>
-                  <a class="flex item-center w-full" title="DAIRNet Symposium" href="#" onclick="javascript:top.location.href='/dairnet.html'">
-                    <span id = 'dairnet' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">DAIRNet Symposium</span>
-                  </a>
-                  <a class="flex item-center w-full" title="Sponsors" href="#" onclick="javascript:top.location.href='/sponsor.html'">
-                    <span id = 'sponsor' class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Sponsors</span>
                   </a>
                 </div>
               </div>

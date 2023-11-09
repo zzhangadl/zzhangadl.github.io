@@ -309,17 +309,31 @@ function hide_pop_up_window(id)
 
 function mobile_menu_shift(key)
 {
-    var section_1 = document.getElementById('mobile_menu_section_1');
-    var section_2 = document.getElementById('mobile_menu_section_2');
-    if (key == 1)
-    {
-        section_1.setAttribute('style', 'display: none;');
-        section_2.setAttribute('style', 'visibility: visible;');
-    }
-    else
-    {
-        section_1.setAttribute('style', 'visibility: visible;');
-        section_2.setAttribute('style', 'display: none;');
+    const sectionMain = document.getElementById('mobile_menu_section_main');
+    const sectionAttending = document.getElementById('mobile_menu_section_attending');
+    const sectionCFS = document.getElementById('mobile_menu_section_cfs');
+    const maxHeight = window.innerHeight - 64 + 'px';
+    switch(key) {
+        case 0: {
+            sectionMain.setAttribute('style', `visibility: visible; max-height: ${maxHeight};`);
+            sectionAttending.setAttribute('style', 'display: none;');
+            sectionCFS.setAttribute('style', 'display: none;');
+            break;
+        }
+
+        case 1: {
+            sectionMain.setAttribute('style', 'display: none;');
+            sectionAttending.setAttribute('style', `visibility: visible; max-height: ${maxHeight};`);
+            sectionCFS.setAttribute('style', 'display: none;');
+            break;
+        }
+
+        case 2: {
+            sectionMain.setAttribute('style', 'display: none;');
+            sectionAttending.setAttribute('style', 'display: none;');
+            sectionCFS.setAttribute('style', `visibility: visible; max-height: ${maxHeight};`);
+            break;
+        }
     }
 }
 
@@ -361,8 +375,12 @@ function extentIframe()
             else
             {
                 iframe.style.height = "100%";
-                const menuBody = iframe.contentWindow.document.getElementById('mobile_menu_section_1');
-                menuBody.style.height = window.innerHeight - 64 + 'px';
+                const sectionMain = iframe.contentWindow.document.getElementById('mobile_menu_section_main');
+                menuBody.style.maxHeight = window.innerHeight - 64 + 'px';
+                const sectionAttending = iframe.contentWindow.document.getElementById('mobile_menu_section_attending');
+                menuBody.style.maxHeight = window.innerHeight - 64 + 'px';
+                const sectionCFS = iframe.contentWindow.document.getElementById('mobile_menu_section_cfs');
+                menuBody.style.maxHeight = window.innerHeight - 64 + 'px';
             }
         }, 250);
     }
