@@ -333,7 +333,7 @@ function changeMobileMenu(id)
 function extentIframe()
 {
     const extentHeightPc = 315;
-    const extentHeightMobile = "100%";
+    const extentHeightMobile = 500;
     const iframe = document.getElementById('menu');
     let height = iframe.scrollHeight;
     // let width = window.screen.width;
@@ -360,7 +360,7 @@ function extentIframe()
             }
             else
             {
-                iframe.style.height = height + extentHeightMobile + 'px';
+                iframe.style.height = "100%";
             }
         }, 250);
     }
