@@ -361,6 +361,8 @@ function extentIframe()
             else
             {
                 iframe.style.height = "100%";
+                const menuBody = iframe.contentWindow.document.getElementById('mobile_menu_section_1');
+                menuBody.style.height = window.innerHeight - 64 + 'px';
             }
         }, 250);
     }
