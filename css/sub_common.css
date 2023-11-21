@@ -2621,6 +2621,19 @@ table thead tr th {
 		width: 100%;
 	}
 
+	.j_location_mobile {
+		float: center;
+		border-radius: 10px;
+		box-shadow: 5px 5px 10px grey;
+		width: 100%;
+	}
+
+	.j_location_text_mobile {
+		float: center;
+		margin-top: 14px;
+		width: 100%;
+	}
+
 	.j_accom_map {
 		height: 290px;
 	}
@@ -2683,7 +2696,7 @@ table thead tr th {
 		box-shadow: 5px 5px 10px grey;
 		width: 45%;
 		margin: 2.5%;
-		float: left;
+		float: right;
 		margin-bottom: 5%;
 	}
 
@@ -2698,6 +2711,30 @@ table thead tr th {
 
 	.j_accom_map {
 		height: 100%;
+	}
+
+	.j_location_text_screen_left {
+		float: left;
+		width: 40%;
+	}
+
+	.j_location_pic_screen_right {
+		float: right;
+		border-radius: 10px;
+		box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.1);
+		width: 55%;
+	}
+
+	.j_location_text_screen_right {
+		float: right;
+		width: 40%;
+	}
+
+	.j_location_pic_screen_left {
+		float: left;
+		border-radius: 10px;
+		box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.1);
+		width: 55%;
 	}
 }
 
